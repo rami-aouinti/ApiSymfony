@@ -1,13 +1,7 @@
 # PHP symfony environment with JSON REST API example
 Docker environment (based on official php and mysql docker hub repositories) required to run Symfony with JSON REST API example.
 
-[![Actions Status](https://github.com/systemsdk/docker-symfony-api/workflows/Symfony%20Rest%20API/badge.svg)](https://github.com/systemsdk/docker-symfony-api/actions)
-[![CircleCI](https://circleci.com/gh/systemsdk/docker-symfony-api.svg?style=svg)](https://circleci.com/gh/systemsdk/docker-symfony-api)
-[![Coverage Status](https://coveralls.io/repos/github/systemsdk/docker-symfony-api/badge.svg)](https://coveralls.io/github/systemsdk/docker-symfony-api)
-[![Latest Stable Version](https://poser.pugx.org/systemsdk/docker-symfony-api/v)](https://packagist.org/packages/systemsdk/docker-symfony-api)
-[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-
-[Source code](https://github.com/systemsdk/docker-symfony-api.git)
+[Source code](https://github.com/rami-aouinti/ApiSymfony.git)
 
 ## Requirements
 * Docker version 18.06 or later
@@ -39,11 +33,6 @@ Note 2: If you are using docker desktop for MacOS 12.2 or later - please enable 
 
 ## Setting up DEV environment
 1.You can clone this repository from GitHub or install via composer.
-
-If you have installed composer and want to install environment via composer you can use next cmd command:
-```bash
-composer create-project systemsdk/docker-symfony-api api-example-app
-```
 
 2.Set another APP_SECRET for application in .env.prod and .env.staging files.
 
@@ -109,11 +98,6 @@ make elastic-create-or-update-template
 
 Note: Delete var/mysql-data folder if it is exist.
 
-If you have installed composer and want to install environment via composer you can use next cmd command:
-```bash
-composer create-project systemsdk/docker-symfony-api api-example-app
-```
-
 2.Elasticsearch is pre-configured with the following privileged bootstrap user:
 ```bash
 user: elastic
@@ -138,11 +122,6 @@ make elastic-create-or-update-template
 
 ## Setting up PROD environment locally
 1.You can clone this repository from GitHub or install via composer.
-
-If you have installed composer and want to install environment via composer you can use next cmd command:
-```bash
-composer create-project systemsdk/docker-symfony-api api-example-app
-```
 
 2.Edit docker-compose-prod.yml and set necessary user/password for MySQL and RabbitMQ.
 
@@ -348,6 +327,3 @@ Notes: Please see more commands in Makefile
 6. When PR is approved, it will be squashed & merged, into `develop` and later merged into `release/{No}` for deployment.
 
 Note: You can find git flow detail example [here](https://danielkummer.github.io/git-flow-cheatsheet).
-
-## License
-[The MIT License (MIT)](LICENSE)
